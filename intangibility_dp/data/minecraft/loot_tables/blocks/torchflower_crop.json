@@ -1,0 +1,109 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:torchflower_crop\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:torchflower_crop\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:torchflower_crop",
+          "properties": [
+            "age"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:torchflower_crop[age=0]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:torchflower_crop",
+              "properties": {
+                "age": "0"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:torchflower_crop[age=1]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:torchflower_crop",
+              "properties": {
+                "age": "1"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:torchflower_crop[age=2]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:torchflower_crop",
+              "properties": {
+                "age": "2"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/torchflower_crop"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

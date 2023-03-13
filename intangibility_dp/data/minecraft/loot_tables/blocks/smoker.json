@@ -1,0 +1,183 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:smoker\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:smoker\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:smoker",
+          "properties": [
+            "facing",
+            "lit"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:smoker[facing=east,lit=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:smoker",
+              "properties": {
+                "facing": "east",
+                "lit": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:smoker[facing=east,lit=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:smoker",
+              "properties": {
+                "facing": "east",
+                "lit": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:smoker[facing=north,lit=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:smoker",
+              "properties": {
+                "facing": "north",
+                "lit": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:smoker[facing=north,lit=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:smoker",
+              "properties": {
+                "facing": "north",
+                "lit": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:smoker[facing=south,lit=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:smoker",
+              "properties": {
+                "facing": "south",
+                "lit": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:smoker[facing=south,lit=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:smoker",
+              "properties": {
+                "facing": "south",
+                "lit": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:smoker[facing=west,lit=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:smoker",
+              "properties": {
+                "facing": "west",
+                "lit": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:smoker[facing=west,lit=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:smoker",
+              "properties": {
+                "facing": "west",
+                "lit": "true"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/smoker"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

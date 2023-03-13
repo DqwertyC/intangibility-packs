@@ -1,0 +1,346 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:redstone_wire\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:redstone_wire\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:redstone_wire",
+          "properties": [
+            "OR",
+            "north",
+            "south",
+            "east",
+            "west"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=side|up,south=side|up,east=side|up,west=side|up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "side|up",
+                "south": "side|up",
+                "east": "side|up",
+                "west": "side|up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=side|up,south=side|up,east=side|up,west=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "side|up",
+                "south": "side|up",
+                "east": "side|up",
+                "west": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=side|up,south=side|up,east=up,west=side|up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "side|up",
+                "south": "side|up",
+                "east": "up",
+                "west": "side|up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=side|up,south=side|up,east=up,west=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "side|up",
+                "south": "side|up",
+                "east": "up",
+                "west": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=side|up,south=up,east=side|up,west=side|up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "side|up",
+                "south": "up",
+                "east": "side|up",
+                "west": "side|up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=side|up,south=up,east=side|up,west=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "side|up",
+                "south": "up",
+                "east": "side|up",
+                "west": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=side|up,south=up,east=up,west=side|up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "side|up",
+                "south": "up",
+                "east": "up",
+                "west": "side|up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=side|up,south=up,east=up,west=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "side|up",
+                "south": "up",
+                "east": "up",
+                "west": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=up,south=side|up,east=side|up,west=side|up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "up",
+                "south": "side|up",
+                "east": "side|up",
+                "west": "side|up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=up,south=side|up,east=side|up,west=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "up",
+                "south": "side|up",
+                "east": "side|up",
+                "west": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=up,south=side|up,east=up,west=side|up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "up",
+                "south": "side|up",
+                "east": "up",
+                "west": "side|up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=up,south=side|up,east=up,west=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "up",
+                "south": "side|up",
+                "east": "up",
+                "west": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=up,south=up,east=side|up,west=side|up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "up",
+                "south": "up",
+                "east": "side|up",
+                "west": "side|up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=up,south=up,east=side|up,west=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "up",
+                "south": "up",
+                "east": "side|up",
+                "west": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=up,south=up,east=up,west=side|up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "up",
+                "south": "up",
+                "east": "up",
+                "west": "side|up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:redstone_wire[OR=undefined,north=up,south=up,east=up,west=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:redstone_wire",
+              "properties": {
+                "OR": "undefined",
+                "north": "up",
+                "south": "up",
+                "east": "up",
+                "west": "up"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/redstone_wire"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:big_dripleaf\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:big_dripleaf\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:big_dripleaf",
+          "properties": [
+            "facing",
+            "tilt"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=east,tilt=full]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "east",
+                "tilt": "full"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=east,tilt=none]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "east",
+                "tilt": "none"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=east,tilt=partial]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "east",
+                "tilt": "partial"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=east,tilt=unstable]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "east",
+                "tilt": "unstable"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=north,tilt=full]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "north",
+                "tilt": "full"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=north,tilt=none]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "north",
+                "tilt": "none"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=north,tilt=partial]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "north",
+                "tilt": "partial"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=north,tilt=unstable]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "north",
+                "tilt": "unstable"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=south,tilt=full]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "south",
+                "tilt": "full"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=south,tilt=none]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "south",
+                "tilt": "none"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=south,tilt=partial]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "south",
+                "tilt": "partial"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=south,tilt=unstable]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "south",
+                "tilt": "unstable"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=west,tilt=full]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "west",
+                "tilt": "full"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=west,tilt=none]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "west",
+                "tilt": "none"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=west,tilt=partial]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "west",
+                "tilt": "partial"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:big_dripleaf[facing=west,tilt=unstable]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:big_dripleaf",
+              "properties": {
+                "facing": "west",
+                "tilt": "unstable"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/big_dripleaf"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

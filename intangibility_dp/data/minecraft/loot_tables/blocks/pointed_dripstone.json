@@ -1,0 +1,211 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:pointed_dripstone\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:pointed_dripstone",
+          "properties": [
+            "thickness",
+            "vertical_direction"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone[thickness=base,vertical_direction=down]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pointed_dripstone",
+              "properties": {
+                "thickness": "base",
+                "vertical_direction": "down"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone[thickness=base,vertical_direction=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pointed_dripstone",
+              "properties": {
+                "thickness": "base",
+                "vertical_direction": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone[thickness=frustum,vertical_direction=down]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pointed_dripstone",
+              "properties": {
+                "thickness": "frustum",
+                "vertical_direction": "down"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone[thickness=frustum,vertical_direction=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pointed_dripstone",
+              "properties": {
+                "thickness": "frustum",
+                "vertical_direction": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone[thickness=middle,vertical_direction=down]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pointed_dripstone",
+              "properties": {
+                "thickness": "middle",
+                "vertical_direction": "down"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone[thickness=middle,vertical_direction=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pointed_dripstone",
+              "properties": {
+                "thickness": "middle",
+                "vertical_direction": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone[thickness=tip,vertical_direction=down]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pointed_dripstone",
+              "properties": {
+                "thickness": "tip",
+                "vertical_direction": "down"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone[thickness=tip,vertical_direction=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pointed_dripstone",
+              "properties": {
+                "thickness": "tip",
+                "vertical_direction": "up"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone[thickness=tip_merge,vertical_direction=down]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pointed_dripstone",
+              "properties": {
+                "thickness": "tip_merge",
+                "vertical_direction": "down"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:pointed_dripstone[thickness=tip_merge,vertical_direction=up]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:pointed_dripstone",
+              "properties": {
+                "thickness": "tip_merge",
+                "vertical_direction": "up"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/pointed_dripstone"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

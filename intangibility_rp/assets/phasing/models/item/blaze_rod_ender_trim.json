@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "phasing:item/wand_handle",
+    "layer1": "phasing:trims/items/wand_trim_ender"
+  }
+}

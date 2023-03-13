@@ -1,0 +1,192 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:brewing_stand\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:brewing_stand\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:brewing_stand",
+          "properties": [
+            "has_bottle_0",
+            "has_bottle_1",
+            "has_bottle_2"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:brewing_stand",
+              "properties": {
+                "has_bottle_0": "true",
+                "has_bottle_1": "true",
+                "has_bottle_2": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:brewing_stand",
+              "properties": {
+                "has_bottle_0": "true",
+                "has_bottle_1": "true",
+                "has_bottle_2": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=false,has_bottle_2=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:brewing_stand",
+              "properties": {
+                "has_bottle_0": "true",
+                "has_bottle_1": "false",
+                "has_bottle_2": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=false,has_bottle_2=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:brewing_stand",
+              "properties": {
+                "has_bottle_0": "true",
+                "has_bottle_1": "false",
+                "has_bottle_2": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=true,has_bottle_2=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:brewing_stand",
+              "properties": {
+                "has_bottle_0": "false",
+                "has_bottle_1": "true",
+                "has_bottle_2": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=true,has_bottle_2=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:brewing_stand",
+              "properties": {
+                "has_bottle_0": "false",
+                "has_bottle_1": "true",
+                "has_bottle_2": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:brewing_stand",
+              "properties": {
+                "has_bottle_0": "false",
+                "has_bottle_1": "false",
+                "has_bottle_2": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:brewing_stand",
+              "properties": {
+                "has_bottle_0": "false",
+                "has_bottle_1": "false",
+                "has_bottle_2": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/brewing_stand"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

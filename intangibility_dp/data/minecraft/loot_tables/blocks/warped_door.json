@@ -1,0 +1,585 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:warped_door\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:warped_door\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:warped_door",
+          "properties": [
+            "facing",
+            "half",
+            "hinge",
+            "open"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=east,half=lower,hinge=left,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "east",
+                "half": "lower",
+                "hinge": "left",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=east,half=lower,hinge=left,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "east",
+                "half": "lower",
+                "hinge": "left",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=east,half=lower,hinge=right,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "east",
+                "half": "lower",
+                "hinge": "right",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=east,half=lower,hinge=right,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "east",
+                "half": "lower",
+                "hinge": "right",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=east,half=upper,hinge=left,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "east",
+                "half": "upper",
+                "hinge": "left",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=east,half=upper,hinge=left,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "east",
+                "half": "upper",
+                "hinge": "left",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=east,half=upper,hinge=right,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "east",
+                "half": "upper",
+                "hinge": "right",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=east,half=upper,hinge=right,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "east",
+                "half": "upper",
+                "hinge": "right",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=north,half=lower,hinge=left,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "north",
+                "half": "lower",
+                "hinge": "left",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=north,half=lower,hinge=left,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "north",
+                "half": "lower",
+                "hinge": "left",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=north,half=lower,hinge=right,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "north",
+                "half": "lower",
+                "hinge": "right",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=north,half=lower,hinge=right,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "north",
+                "half": "lower",
+                "hinge": "right",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=north,half=upper,hinge=left,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "north",
+                "half": "upper",
+                "hinge": "left",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=north,half=upper,hinge=left,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "north",
+                "half": "upper",
+                "hinge": "left",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=north,half=upper,hinge=right,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "north",
+                "half": "upper",
+                "hinge": "right",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=north,half=upper,hinge=right,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "north",
+                "half": "upper",
+                "hinge": "right",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=south,half=lower,hinge=left,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "south",
+                "half": "lower",
+                "hinge": "left",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=south,half=lower,hinge=left,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "south",
+                "half": "lower",
+                "hinge": "left",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=south,half=lower,hinge=right,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "south",
+                "half": "lower",
+                "hinge": "right",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=south,half=lower,hinge=right,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "south",
+                "half": "lower",
+                "hinge": "right",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=south,half=upper,hinge=left,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "south",
+                "half": "upper",
+                "hinge": "left",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=south,half=upper,hinge=left,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "south",
+                "half": "upper",
+                "hinge": "left",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=south,half=upper,hinge=right,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "south",
+                "half": "upper",
+                "hinge": "right",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=south,half=upper,hinge=right,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "south",
+                "half": "upper",
+                "hinge": "right",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=west,half=lower,hinge=left,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "west",
+                "half": "lower",
+                "hinge": "left",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=west,half=lower,hinge=left,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "west",
+                "half": "lower",
+                "hinge": "left",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=west,half=lower,hinge=right,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "west",
+                "half": "lower",
+                "hinge": "right",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=west,half=lower,hinge=right,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "west",
+                "half": "lower",
+                "hinge": "right",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=west,half=upper,hinge=left,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "west",
+                "half": "upper",
+                "hinge": "left",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=west,half=upper,hinge=left,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "west",
+                "half": "upper",
+                "hinge": "left",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=west,half=upper,hinge=right,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "west",
+                "half": "upper",
+                "hinge": "right",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:warped_door[facing=west,half=upper,hinge=right,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:warped_door",
+              "properties": {
+                "facing": "west",
+                "half": "upper",
+                "hinge": "right",
+                "open": "true"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/warped_door"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

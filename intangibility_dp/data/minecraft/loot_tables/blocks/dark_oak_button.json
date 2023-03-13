@@ -1,0 +1,432 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:dark_oak_button\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:dark_oak_button\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:dark_oak_button",
+          "properties": [
+            "face",
+            "facing",
+            "powered"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=ceiling,facing=east,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "ceiling",
+                "facing": "east",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=ceiling,facing=east,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "ceiling",
+                "facing": "east",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=ceiling,facing=north,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "ceiling",
+                "facing": "north",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=ceiling,facing=north,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "ceiling",
+                "facing": "north",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=ceiling,facing=south,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "ceiling",
+                "facing": "south",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=ceiling,facing=south,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "ceiling",
+                "facing": "south",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=ceiling,facing=west,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "ceiling",
+                "facing": "west",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=ceiling,facing=west,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "ceiling",
+                "facing": "west",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=floor,facing=east,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "floor",
+                "facing": "east",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=floor,facing=east,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "floor",
+                "facing": "east",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=floor,facing=north,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "floor",
+                "facing": "north",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=floor,facing=north,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "floor",
+                "facing": "north",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=floor,facing=south,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "floor",
+                "facing": "south",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=floor,facing=south,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "floor",
+                "facing": "south",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=floor,facing=west,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "floor",
+                "facing": "west",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=floor,facing=west,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "floor",
+                "facing": "west",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=wall,facing=east,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "wall",
+                "facing": "east",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=wall,facing=east,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "wall",
+                "facing": "east",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=wall,facing=north,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "wall",
+                "facing": "north",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=wall,facing=north,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "wall",
+                "facing": "north",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=wall,facing=south,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "wall",
+                "facing": "south",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=wall,facing=south,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "wall",
+                "facing": "south",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=wall,facing=west,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "wall",
+                "facing": "west",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_button[face=wall,facing=west,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_button",
+              "properties": {
+                "face": "wall",
+                "facing": "west",
+                "powered": "true"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/dark_oak_button"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

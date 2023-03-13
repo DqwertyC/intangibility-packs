@@ -1,0 +1,1097 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:repeater\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:repeater\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:repeater",
+          "properties": [
+            "delay",
+            "facing",
+            "locked",
+            "powered"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=east,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "east",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=east,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "east",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=east,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "east",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=east,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "east",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=north,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "north",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=north,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "north",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=north,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "north",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=north,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "north",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=south,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "south",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=south,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "south",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=south,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "south",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=south,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "south",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=west,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "west",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=west,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "west",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=west,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "west",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=1,facing=west,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "1",
+                "facing": "west",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=east,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "east",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=east,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "east",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=east,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "east",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=east,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "east",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=north,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "north",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=north,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "north",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=north,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "north",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=north,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "north",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=south,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "south",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=south,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "south",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=south,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "south",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=south,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "south",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=west,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "west",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=west,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "west",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=west,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "west",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=2,facing=west,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "2",
+                "facing": "west",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=east,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "east",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=east,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "east",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=east,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "east",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=east,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "east",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=north,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "north",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=north,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "north",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=north,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "north",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=north,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "north",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=south,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "south",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=south,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "south",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=south,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "south",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=south,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "south",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=west,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "west",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=west,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "west",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=west,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "west",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=3,facing=west,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "3",
+                "facing": "west",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=east,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "east",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=east,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "east",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=east,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "east",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=east,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "east",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=north,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "north",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=north,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "north",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=north,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "north",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=north,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "north",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=south,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "south",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=south,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "south",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=south,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "south",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=south,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "south",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=west,locked=false,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "west",
+                "locked": "false",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=west,locked=false,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "west",
+                "locked": "false",
+                "powered": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=west,locked=true,powered=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "west",
+                "locked": "true",
+                "powered": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:repeater[delay=4,facing=west,locked=true,powered=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:repeater",
+              "properties": {
+                "delay": "4",
+                "facing": "west",
+                "locked": "true",
+                "powered": "true"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/repeater"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

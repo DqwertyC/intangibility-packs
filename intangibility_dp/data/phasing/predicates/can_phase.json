@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "flags": {
+      "is_sneaking": true
+    },
+    "effects": {
+      "minecraft:invisibility": {
+        "amplifier": 1
+      }
+    }
+  }
+}

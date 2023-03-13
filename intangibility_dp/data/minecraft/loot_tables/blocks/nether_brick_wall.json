@@ -1,0 +1,346 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:nether_brick_wall\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:nether_brick_wall",
+          "properties": [
+            "up",
+            "north",
+            "east",
+            "south",
+            "west"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=low,east=low,south=low,west=low]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "low",
+                "east": "low",
+                "south": "low",
+                "west": "low"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=low,east=low,south=low,west=tall]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "low",
+                "east": "low",
+                "south": "low",
+                "west": "tall"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=low,east=low,south=tall,west=low]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "low",
+                "east": "low",
+                "south": "tall",
+                "west": "low"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=low,east=low,south=tall,west=tall]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "low",
+                "east": "low",
+                "south": "tall",
+                "west": "tall"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=low,east=tall,south=low,west=low]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "low",
+                "east": "tall",
+                "south": "low",
+                "west": "low"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=low,east=tall,south=low,west=tall]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "low",
+                "east": "tall",
+                "south": "low",
+                "west": "tall"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=low,east=tall,south=tall,west=low]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "low",
+                "east": "tall",
+                "south": "tall",
+                "west": "low"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=low,east=tall,south=tall,west=tall]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "low",
+                "east": "tall",
+                "south": "tall",
+                "west": "tall"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=tall,east=low,south=low,west=low]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "tall",
+                "east": "low",
+                "south": "low",
+                "west": "low"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=tall,east=low,south=low,west=tall]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "tall",
+                "east": "low",
+                "south": "low",
+                "west": "tall"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=tall,east=low,south=tall,west=low]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "tall",
+                "east": "low",
+                "south": "tall",
+                "west": "low"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=tall,east=low,south=tall,west=tall]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "tall",
+                "east": "low",
+                "south": "tall",
+                "west": "tall"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=tall,east=tall,south=low,west=low]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "tall",
+                "east": "tall",
+                "south": "low",
+                "west": "low"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=tall,east=tall,south=low,west=tall]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "tall",
+                "east": "tall",
+                "south": "low",
+                "west": "tall"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=tall,east=tall,south=tall,west=low]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "tall",
+                "east": "tall",
+                "south": "tall",
+                "west": "low"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:nether_brick_wall[up=true,north=tall,east=tall,south=tall,west=tall]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:nether_brick_wall",
+              "properties": {
+                "up": "true",
+                "north": "tall",
+                "east": "tall",
+                "south": "tall",
+                "west": "tall"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/nether_brick_wall"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

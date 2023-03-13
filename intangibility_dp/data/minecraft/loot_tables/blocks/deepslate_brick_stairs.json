@@ -1,0 +1,672 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:deepslate_brick_stairs\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:deepslate_brick_stairs",
+          "properties": [
+            "facing",
+            "half",
+            "shape"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=east,half=bottom,shape=inner_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "east",
+                "half": "bottom",
+                "shape": "inner_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=east,half=bottom,shape=inner_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "east",
+                "half": "bottom",
+                "shape": "inner_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=east,half=bottom,shape=outer_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "east",
+                "half": "bottom",
+                "shape": "outer_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=east,half=bottom,shape=outer_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "east",
+                "half": "bottom",
+                "shape": "outer_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=east,half=bottom,shape=straight]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "east",
+                "half": "bottom",
+                "shape": "straight"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=east,half=top,shape=inner_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "east",
+                "half": "top",
+                "shape": "inner_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=east,half=top,shape=inner_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "east",
+                "half": "top",
+                "shape": "inner_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=east,half=top,shape=outer_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "east",
+                "half": "top",
+                "shape": "outer_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=east,half=top,shape=outer_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "east",
+                "half": "top",
+                "shape": "outer_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=east,half=top,shape=straight]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "east",
+                "half": "top",
+                "shape": "straight"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=north,half=bottom,shape=inner_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "inner_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=north,half=bottom,shape=inner_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "inner_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=north,half=bottom,shape=outer_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "outer_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=north,half=bottom,shape=outer_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "outer_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=north,half=bottom,shape=straight]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "north",
+                "half": "bottom",
+                "shape": "straight"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=north,half=top,shape=inner_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "north",
+                "half": "top",
+                "shape": "inner_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=north,half=top,shape=inner_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "north",
+                "half": "top",
+                "shape": "inner_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=north,half=top,shape=outer_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "north",
+                "half": "top",
+                "shape": "outer_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=north,half=top,shape=outer_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "north",
+                "half": "top",
+                "shape": "outer_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=north,half=top,shape=straight]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "north",
+                "half": "top",
+                "shape": "straight"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=south,half=bottom,shape=inner_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "south",
+                "half": "bottom",
+                "shape": "inner_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=south,half=bottom,shape=inner_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "south",
+                "half": "bottom",
+                "shape": "inner_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=south,half=bottom,shape=outer_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "south",
+                "half": "bottom",
+                "shape": "outer_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=south,half=bottom,shape=outer_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "south",
+                "half": "bottom",
+                "shape": "outer_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=south,half=bottom,shape=straight]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "south",
+                "half": "bottom",
+                "shape": "straight"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=south,half=top,shape=inner_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "south",
+                "half": "top",
+                "shape": "inner_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=south,half=top,shape=inner_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "south",
+                "half": "top",
+                "shape": "inner_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=south,half=top,shape=outer_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "south",
+                "half": "top",
+                "shape": "outer_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=south,half=top,shape=outer_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "south",
+                "half": "top",
+                "shape": "outer_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=south,half=top,shape=straight]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "south",
+                "half": "top",
+                "shape": "straight"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=west,half=bottom,shape=inner_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "west",
+                "half": "bottom",
+                "shape": "inner_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=west,half=bottom,shape=inner_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "west",
+                "half": "bottom",
+                "shape": "inner_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=west,half=bottom,shape=outer_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "west",
+                "half": "bottom",
+                "shape": "outer_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=west,half=bottom,shape=outer_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "west",
+                "half": "bottom",
+                "shape": "outer_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=west,half=bottom,shape=straight]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "west",
+                "half": "bottom",
+                "shape": "straight"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=west,half=top,shape=inner_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "west",
+                "half": "top",
+                "shape": "inner_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=west,half=top,shape=inner_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "west",
+                "half": "top",
+                "shape": "inner_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=west,half=top,shape=outer_left]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "west",
+                "half": "top",
+                "shape": "outer_left"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=west,half=top,shape=outer_right]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "west",
+                "half": "top",
+                "shape": "outer_right"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:deepslate_brick_stairs[facing=west,half=top,shape=straight]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:deepslate_brick_stairs",
+              "properties": {
+                "facing": "west",
+                "half": "top",
+                "shape": "straight"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/deepslate_brick_stairs"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

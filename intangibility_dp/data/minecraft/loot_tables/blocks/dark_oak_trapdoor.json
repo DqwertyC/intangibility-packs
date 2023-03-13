@@ -1,0 +1,312 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:dark_oak_trapdoor\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:dark_oak_trapdoor",
+          "properties": [
+            "facing",
+            "half",
+            "open"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=east,half=bottom,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "east",
+                "half": "bottom",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=east,half=bottom,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "east",
+                "half": "bottom",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=east,half=top,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "east",
+                "half": "top",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=east,half=top,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "east",
+                "half": "top",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=north,half=bottom,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "north",
+                "half": "bottom",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=north,half=bottom,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "north",
+                "half": "bottom",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=north,half=top,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "north",
+                "half": "top",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=north,half=top,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "north",
+                "half": "top",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=south,half=bottom,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "south",
+                "half": "bottom",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=south,half=bottom,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "south",
+                "half": "bottom",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=south,half=top,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "south",
+                "half": "top",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=south,half=top,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "south",
+                "half": "top",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=west,half=bottom,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "west",
+                "half": "bottom",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=west,half=bottom,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "west",
+                "half": "bottom",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=west,half=top,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "west",
+                "half": "top",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:dark_oak_trapdoor[facing=west,half=top,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:dark_oak_trapdoor",
+              "properties": {
+                "facing": "west",
+                "half": "top",
+                "open": "true"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/dark_oak_trapdoor"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

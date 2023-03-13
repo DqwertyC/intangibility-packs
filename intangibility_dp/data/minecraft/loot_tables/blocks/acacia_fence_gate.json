@@ -1,0 +1,312 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:acacia_fence_gate\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:acacia_fence_gate",
+          "properties": [
+            "facing",
+            "in_wall",
+            "open"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=east,in_wall=false,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "east",
+                "in_wall": "false",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=east,in_wall=false,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "east",
+                "in_wall": "false",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=east,in_wall=true,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "east",
+                "in_wall": "true",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=east,in_wall=true,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "east",
+                "in_wall": "true",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=north,in_wall=false,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "north",
+                "in_wall": "false",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=north,in_wall=false,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "north",
+                "in_wall": "false",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=north,in_wall=true,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "north",
+                "in_wall": "true",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=north,in_wall=true,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "north",
+                "in_wall": "true",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=south,in_wall=false,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "south",
+                "in_wall": "false",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=south,in_wall=false,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "south",
+                "in_wall": "false",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=south,in_wall=true,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "south",
+                "in_wall": "true",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=south,in_wall=true,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "south",
+                "in_wall": "true",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=west,in_wall=false,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "west",
+                "in_wall": "false",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=west,in_wall=false,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "west",
+                "in_wall": "false",
+                "open": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=west,in_wall=true,open=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "west",
+                "in_wall": "true",
+                "open": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:acacia_fence_gate[facing=west,in_wall=true,open=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:acacia_fence_gate",
+              "properties": {
+                "facing": "west",
+                "in_wall": "true",
+                "open": "true"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/acacia_fence_gate"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

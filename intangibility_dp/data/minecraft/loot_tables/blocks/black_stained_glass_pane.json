@@ -1,0 +1,329 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:debug_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{CreateTunnel:1b,BlockName:\"minecraft:black_stained_glass_pane\",CustomModelData:42,Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane\"}"
+        },
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "block_entity",
+          "ops": [
+            {
+              "source": "{}",
+              "target": "{}",
+              "op": "merge"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:copy_state",
+          "block": "minecraft:black_stained_glass_pane",
+          "properties": [
+            "north",
+            "east",
+            "south",
+            "west"
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=true,east=true,south=true,west=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "true",
+                "east": "true",
+                "south": "true",
+                "west": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=true,east=true,south=true,west=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "true",
+                "east": "true",
+                "south": "true",
+                "west": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=true,east=true,south=false,west=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "true",
+                "east": "true",
+                "south": "false",
+                "west": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=true,east=true,south=false,west=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "true",
+                "east": "true",
+                "south": "false",
+                "west": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=true,east=false,south=true,west=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "true",
+                "east": "false",
+                "south": "true",
+                "west": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=true,east=false,south=true,west=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "true",
+                "east": "false",
+                "south": "true",
+                "west": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=true,east=false,south=false,west=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "true",
+                "east": "false",
+                "south": "false",
+                "west": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=true,east=false,south=false,west=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "true",
+                "east": "false",
+                "south": "false",
+                "west": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=false,east=true,south=true,west=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "false",
+                "east": "true",
+                "south": "true",
+                "west": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=false,east=true,south=true,west=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "false",
+                "east": "true",
+                "south": "true",
+                "west": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=false,east=true,south=false,west=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "false",
+                "east": "true",
+                "south": "false",
+                "west": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=false,east=true,south=false,west=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "false",
+                "east": "true",
+                "south": "false",
+                "west": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=false,east=false,south=true,west=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "false",
+                "east": "false",
+                "south": "true",
+                "west": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=false,east=false,south=true,west=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "false",
+                "east": "false",
+                "south": "true",
+                "west": "false"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=false,east=false,south=false,west=true]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "false",
+                "east": "false",
+                "south": "false",
+                "west": "true"
+              }
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{Command:\"setblock ~ ~ ~ minecraft:black_stained_glass_pane[north=false,east=false,south=false,west=false]\"}",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:black_stained_glass_pane",
+              "properties": {
+                "north": "false",
+                "east": "false",
+                "south": "false",
+                "west": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:debug_stick"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "default:blocks/black_stained_glass_pane"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:debug_stick"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
