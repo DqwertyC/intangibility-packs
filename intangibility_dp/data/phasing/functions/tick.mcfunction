@@ -11,5 +11,5 @@ clear @a minecraft:debug_stick{CustomModelData:42}
 execute as @e[tag=phase_marker,tag=solidifying] at @s unless block ~ ~ ~ minecraft:command_block run function phasing:display_to_block_b
 
 # Start solidifying blocks
-execute as @e[tag=phase_marker,tag=!solidifying] at @s unless entity @a[predicate=phasing:can_phase,distance=0..3] run function phasing:display_to_block_a
+execute as @e[tag=phase_marker,tag=!solidifying] at @s align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @a[predicate=phasing:can_phase,distance=0..2] at @s run function phasing:display_to_block_a
 execute as @e[tag=phase_marker,tag=!solidifying] at @s unless block ~ ~ ~ minecraft:air unless block ~ ~ ~ minecraft:water run function phasing:display_to_block_a
