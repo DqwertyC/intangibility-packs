@@ -12,4 +12,4 @@ execute as @e[tag=phase_marker,tag=solidifying] at @s unless block ~ ~ ~ minecra
 
 # Start solidifying blocks
 execute as @e[tag=phase_marker,tag=!solidifying] at @s unless entity @a[predicate=phasing:can_phase,distance=0..3] run function phasing:display_to_block_a
-execute as @e[tag=phase_marker,tag=!solidifying] at @s unless block ~ ~ ~ minecraft:air run function phasing:display_to_block_a
+execute as @e[tag=phase_marker,tag=!solidifying] at @s unless block ~ ~ ~ minecraft:air unless block ~ ~ ~ minecraft:water run function phasing:display_to_block_a
