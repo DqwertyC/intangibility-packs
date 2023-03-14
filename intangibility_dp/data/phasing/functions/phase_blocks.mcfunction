@@ -1,9 +1,4 @@
-execute positioned ~01 ~00 ~00 run loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:debug_stick
-execute positioned ~-1 ~00 ~00 run loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:debug_stick
-execute positioned ~00 ~00 ~01 run loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:debug_stick
-execute positioned ~00 ~00 ~-1 run loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:debug_stick
-
-execute positioned ~01 ~01 ~00 run loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:debug_stick
-execute positioned ~-1 ~01 ~00 run loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:debug_stick
-execute positioned ~00 ~01 ~01 run loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:debug_stick
-execute positioned ~00 ~01 ~-1 run loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:debug_stick
+execute positioned ~ ~0.25 ~ rotated ~ 0 positioned ^ ^ ^1 run loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:debug_stick
+execute positioned ~ ~0.25 ~ rotated ~ 0 positioned ^ ^ ^1 run kill @e[type=item,nbt=!{Item:{id:"minecraft:debug_stick"}},nbt={Age:0s},distance=0]
+execute positioned ~ ~1.25 ~ rotated ~ 0 positioned ^ ^ ^1 run loot spawn ~ ~ ~ mine ~ ~ ~ minecraft:debug_stick
+execute positioned ~ ~1.25 ~ rotated ~ 0 positioned ^ ^ ^1 run kill @e[type=item,nbt=!{Item:{id:"minecraft:debug_stick"}},nbt={Age:0s},distance=0]
